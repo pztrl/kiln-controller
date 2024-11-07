@@ -20,9 +20,9 @@ listening_port = 8081
 # This is used to calculate a cost estimate before a run. It's also used
 # to produce the actual cost during a run. My kiln has three
 # elements that when my switches are set to high, consume 9460 watts.
-kwh_rate        = 0.1819  # cost per kilowatt hour per currency_type to calculate cost to run job
+kwh_rate        = 0.278  # cost per kilowatt hour per currency_type to calculate cost to run job
 kw_elements     = 3.40 # if the kiln elements are on, the wattage in kilowatts
-currency_type   = "$"   # Currency Symbol to show when calculating cost to run job
+currency_type   = "€"   # Currency Symbol to show when calculating cost to run job
 
 ########################################################################
 #
@@ -140,9 +140,9 @@ sensor_time_wait = 2
 # well with the simulated oven. You must tune them to work well with 
 # your specific kiln. Note that the integral pid_ki is
 # inverted so that a smaller number means more integral action.
-pid_kp = 10   # Proportional 25,200,200
-pid_ki = 80   # Integral
-pid_kd = 220.83497910261562 # Derivative
+pid_kp = 4.3728538400220405   # Proportional 25,200,200
+pid_ki = 87.77102670448365    # Integral
+pid_kd = 419.5861172431588    # Derivative
 
 ########################################################################
 #
@@ -214,7 +214,7 @@ thermocouple_offset=0
 temperature_average_samples = 10 
 
 # Thermocouple AC frequency filtering - set to True if in a 50Hz locale, else leave at False for 60Hz locale
-ac_freq_50hz = False
+ac_freq_50hz = True
 
 ########################################################################
 # Emergencies - or maybe not
