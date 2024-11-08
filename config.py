@@ -185,7 +185,7 @@ time_scale_profile  = "m" # s = Seconds | m = Minutes | h = Hours - Enter and vi
 # naturally cool off. If your SSR has failed/shorted/closed circuit, this
 # means your kiln receives full power until your house burns down.
 # this should not replace you watching your kiln or use of a kiln-sitter
-emergency_shutoff_temp = 2264 #cone 7
+emergency_shutoff_temp = 1290 
 
 # If the current temperature is outside the pid control window,
 # delay the schedule until it does back inside. This allows for heating
@@ -276,4 +276,4 @@ kiln_profiles_directory = os.path.abspath(os.path.join(os.path.dirname( __file__
 # of the elements are used max.
 # To prevent throttling, set throttle_percent to 100.
 throttle_below_temp = 300
-throttle_percent = 20
+throttle_percent = 50
